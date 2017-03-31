@@ -1,0 +1,25 @@
+{
+  "Labor": [
+    {
+      "name": "Repair Prices",
+      "items": [
+        {
+          "name": "TVs: 32 and under",
+          "price": 79.95
+        },
+        {
+          "name": "TVs: 32 to 45",
+          "price": 99.95
+        },
+        {
+          "name": "TVs: 45 to 60",
+          "price": 119.95
+        },
+        {
+          "name": "TVs: 60 and up",
+          "price": 139.95
+        }
+      ]
+    }
+  ]
+}

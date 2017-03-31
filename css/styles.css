@@ -1,0 +1,405 @@
+/*=====================
+  Base Element Styles
+=====================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #333333;
+}
+
+h3 {
+  font-size:250%;
+  line-height: 1;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 1em 0;
+  color: #000000;
+}
+
+h4 {
+  font-size:175%;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+h5 {
+  font-size:150%;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+h6 {
+  font-size:120%;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+p {
+  font-size:120%;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+table {
+  font-size:120%;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+a,
+button {
+    color: inherit;
+    transition: .3s;
+}
+a {
+   text-decoration: none;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*=====================
+  Header
+=====================*/
+
+header {
+  background-color: #333333;
+  background-image: url('../img/cktbd31.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  color: #000000;
+  text-align: center;
+  min-height: 50vh;
+  /*height: 250px;*/
+}
+
+nav::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+nav li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 100%;
+  font-weight: 700;
+  border-bottom: none;
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #EE82EE;
+}
+
+
+h1 {
+  font-size:300%;
+  line-height: 1;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 1em 0 15px;
+}
+
+h2 {
+  font-size:200%;
+  line-height: 1;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+.fam-text{
+  display: block;
+  clear: both;
+}
+
+/*=====================
+  Grid System
+=====================*/
+
+section {
+  background-color: #333333;
+  background-image: url('../img/ClarksdaleTV11.jpg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  color: #000000;
+  text-align: center;  
+}
+  
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_1_of_2 {
+  width: 100%;
+}
+.span_2_of_2{
+  width: 100%;
+}
+
+
+/*=====================
+  Buttons
+=====================*/
+
+a.hero-button:link {
+  font-size: 140%;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #FFFFFF;
+  padding: 6px 12px;
+}
+
+a.hero-button:hover {
+  border-color: #871719;
+  background-color: #871719;
+}
+
+/*=====================
+  Forms
+=====================*/
+
+form {
+
+}
+
+input {
+  width: 90%;
+  display: block;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  height: 36px;
+  padding: 8px;
+  margin: 10px 0px;
+  font-size: 100%;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+textarea#comment-field {
+  display: block;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  height: 200px;
+  padding: 8px;
+  margin: 10px 0px;
+  font-size: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #FFC400;
+  color: #871719;
+  font-family: 'Roboto Slab', serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 40px;
+  width: 100%;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
+
+/*=====================
+  Section Details
+=====================*/
+
+.history {
+    margin: 0;
+    color: #F2F2F2;
+}
+
+.service {
+    background: #871719;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    color: #F2F2F2;
+}
+
+.contact {
+	background: #871719;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    color: #F2F2F2;
+}
+
+.price-head {
+  text-align: center; 
+}
+
+.price {
+  width: 100%;
+  padding: 0 1em 0 0;
+}
+
+.price-cost {
+    color: #871719;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+}
+
+.price-name {
+    color: #F2F2F2;
+}
+
+.red {
+  color: #871719;
+}
+
+footer {
+    background: #871719;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    color: #F2F2F2;
+}
+
+
+/*=====================
+  Media Queries
+=====================*/
+@media screen and (min-width: 994px) {
+  .span_1_of_2 {
+      width: 49.2%;
+  }
+   
+  nav {
+    margin-top: 4em;
+  }
+
+  nav li {
+      width: 24.95%;
+      max-width: 110px;
+      border-bottom: none;
+      display: inline-block;
+  }  
